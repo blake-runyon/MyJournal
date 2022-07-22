@@ -1,1 +1,1 @@
-export const apiUrl = 'https://jsonplaceholder.typicode.com';
+export const apiUrl = "https://hvn3r4jmu3.execute-api.us-east-1.amazonaws.com/dev";

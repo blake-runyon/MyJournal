@@ -10,6 +10,11 @@ const postSchema = new Schema({
         type: String,
         required: true
     }
-})
+    },
+    {
+        collection: 'posts',
+        timestamps: true
+    }
+)
 
 module.exports = mongoose.model('Post', postSchema);

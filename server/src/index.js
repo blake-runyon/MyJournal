@@ -3,9 +3,7 @@ const bodyParser = require('body-parser');
 const cors = require('cors');
 const conn = require('./models/db');
 
-const {
-    routes: indexRoute
-} = require('./routes/index.route');
+const indexRoute = require('./routes/index.route');
 
 const app = express();
 

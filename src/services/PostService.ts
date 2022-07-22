@@ -1,9 +1,8 @@
 import { apiUrl } from "../data/api_url";
+import axios from "axios";
 
 export class PostService {
     GetPosts() {
-        return fetch(`${apiUrl}/posts`)
-            .then(response => response.json())
-            .then(json => json);
+        return axios.get(`${apiUrl}/posts`).then(response => response.data);
     }
 }
